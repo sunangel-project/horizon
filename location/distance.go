@@ -3,7 +3,7 @@ package location
 import (
 	"math"
 
-	"github.com/sunangel-project/location/angle"
+	"github.com/sunangel-project/angle"
 )
 
 const radiusEarthMeters float64 = 6371e3

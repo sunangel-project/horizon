@@ -3,7 +3,7 @@ package horizon
 import (
 	"fmt"
 
-	"github.com/sunangel-project/location/util"
+	"github.com/sunangel-project/horizon/util"
 )
 
 // AltitudeToBytes returns the altitude array of a horizon into a byte slice

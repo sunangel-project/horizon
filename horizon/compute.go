@@ -4,8 +4,8 @@ import (
 	"log"
 	"math"
 
-	"github.com/sunangel-project/location/location"
-	"github.com/sunangel-project/location/util"
+	"github.com/sunangel-project/horizon/location"
+	"github.com/sunangel-project/horizon/util"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/sunangel-project/location/dir"
+	"github.com/sunangel-project/directory"
 	"github.com/tkrajina/go-elevations/geoelevations"
 )
 
@@ -17,7 +17,7 @@ func initSrtm() {
 	log.Printf("Initialiting Srtm")
 
 	var err error
-	srtm, err = geoelevations.NewSrtmWithCustomCacheDir(http.DefaultClient, dir.GetStoreDir("geoelevations"))
+	srtm, err = geoelevations.NewSrtmWithCustomCacheDir(http.DefaultClient, directory.GetStoreDir("geoelevations"))
 	if err != nil {
 		panic(err)
 	}
