@@ -4,6 +4,7 @@ import (
 	"math"
 	"testing"
 
+	"github.com/sunangel-project/horizon"
 	"github.com/sunangel-project/horizon/location"
 )
 
@@ -44,4 +45,10 @@ func TestAzimutAngleTo(t *testing.T) {
 	want := float64(-2.4548) + 2*math.Pi
 
 	testAzimutAngleToGeneral(t, a, b, want)
+}
+
+func BenchmarkComputeHorizon(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		horizon.NewHorizon(locationParagleiter, 1)
+	}
 }
