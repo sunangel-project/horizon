@@ -44,25 +44,22 @@ func circle(r int) []offsetCoordinates {
 // arc computes an eightth circle.
 // It starts at (r, 0) and then moves counter clockwise.
 // Note: the last coordinates could be x = y
-
 func arc(r int) []offsetCoordinates {
-	arc := make([]offsetCoordinates, 1)
-	x := r
-	y := 0
+	max_size := r
+	if r > 10 {
+		max_size = int(float64(r) * 0.75)
+	}
 
-	arc[0] = offsetCoordinates{latitude: x, longitude: y}
+	arc := make([]offsetCoordinates, 0, max_size)
+	x, y := r, 0
 
-	for x > y {
+	for x >= y {
+		arc = append(arc, offsetCoordinates{latitude: x, longitude: y})
+
 		if radiusError(x-1, y+1, r) < radiusError(x, y+1, r) {
 			x -= 1
 		}
 		y += 1
-
-		if x < y {
-			break
-		}
-
-		arc = append(arc, offsetCoordinates{latitude: x, longitude: y})
 	}
 
 	return arc
