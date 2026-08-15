@@ -4,8 +4,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/sunangel-project/horizon"
-	"github.com/sunangel-project/horizon/location"
+	"codeberg.org/energiesandsuch/horizon"
+	"codeberg.org/energiesandsuch/horizon/location"
 )
 
 func testElevationGeneral(t *testing.T, loc *location.Location, want float64) {

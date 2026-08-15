@@ -1,4 +1,4 @@
-module github.com/sunangel-project/horizon
+module codeberg.org/energiesandsuch/horizon
 
 go 1.19
 

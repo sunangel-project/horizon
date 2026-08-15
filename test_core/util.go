@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sunangel-project/horizon/location"
+	"codeberg.org/energiesandsuch/horizon/location"
 )
 
 var (

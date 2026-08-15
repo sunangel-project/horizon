@@ -3,7 +3,7 @@ package test_core
 import (
 	"testing"
 
-	"github.com/sunangel-project/horizon/util"
+	"codeberg.org/energiesandsuch/horizon/util"
 )
 
 func TestLinInt(t *testing.T) {
