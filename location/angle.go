@@ -3,7 +3,7 @@ package location
 import (
 	"math"
 
-	"github.com/sunangel-project/angle"
+	"codeberg.org/energiesandsuch/horizon/angle"
 )
 
 func (src Location) AltitudeAngleTo(tgt *Location) float64 {

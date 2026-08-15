@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/sunangel-project/directory"
+	"codeberg.org/energiesandsuch/horizon/directory"
 	"github.com/tkrajina/go-elevations/geoelevations"
 )
 
