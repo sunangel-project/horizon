@@ -1,4 +1,4 @@
-# Horizon ![version](https://img.shields.io/badge/v0.0.2-blue.svg)
+# Horizon ![version](https://img.shields.io/badge/v0.0.3-blue.svg)
 
 Package of the [Sunangel Project](git@github.com:sunangel-project/horizon.git)
 
